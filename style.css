@@ -1,0 +1,114 @@
+body {
+  font-size: 24px;
+}
+
+.contorno-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: scale-down;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.save-icon {
+  position: absolute;
+  left: 500px;
+  top: 40px;
+  background-color: red;
+  display: flex;
+  height: 50px;
+  width: 80px;
+  z-index: 1;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 2s;
+}
+.contorno-img:hover .save-icon {
+  transform: translateY(50%);
+  opacity: 1;
+}
+
+.share-icon {
+  position: absolute;
+  font-size: 36px;
+  left: 500px;
+  top: 1020px;
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 2s;
+}
+.contorno-img:hover .share-icon {
+  transform: translateY(-30px);
+  opacity: 1;
+}
+.point-icon {
+  position: absolute;
+  font-size: 36px;
+  left: 440px;
+  top: 1020px;
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 2s;
+}
+.contorno-img:hover .point-icon {
+  transform: translateY(-30px);
+  opacity: 1;
+}
+.link-slider {
+  position: absolute;
+  left: 70px;
+  top: 1020px;
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 300px;
+  z-index: 1;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 2s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.puntini {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contorno-img:hover .link-slider {
+  transform: translateY(-30px);
+  opacity: 1;
+}
